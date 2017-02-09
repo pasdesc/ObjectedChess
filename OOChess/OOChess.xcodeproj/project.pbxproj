@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		224ED9B41E4B77B500024AB3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224ED9B31E4B77B500024AB3 /* main.cpp */; };
 		224ED9BC1E4B78F900024AB3 /* BoardStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */; };
+		229054701E4CC9F1009BA8AC /* PieceStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		224ED9B31E4B77B500024AB3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardStructure.cpp; sourceTree = "<group>"; };
 		224ED9BB1E4B78F900024AB3 /* BoardStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BoardStructure.hpp; sourceTree = "<group>"; };
+		2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PieceStructure.cpp; sourceTree = "<group>"; };
+		2290546F1E4CC9F1009BA8AC /* PieceStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PieceStructure.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				224ED9B31E4B77B500024AB3 /* main.cpp */,
 				224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */,
 				224ED9BB1E4B78F900024AB3 /* BoardStructure.hpp */,
+				2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */,
+				2290546F1E4CC9F1009BA8AC /* PieceStructure.hpp */,
 			);
 			path = OOChess;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224ED9BC1E4B78F900024AB3 /* BoardStructure.cpp in Sources */,
+				229054701E4CC9F1009BA8AC /* PieceStructure.cpp in Sources */,
 				224ED9B41E4B77B500024AB3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +258,7 @@
 				224ED9B91E4B77B500024AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

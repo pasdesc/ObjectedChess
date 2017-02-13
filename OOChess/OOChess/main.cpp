@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include "BoardStructure.hpp"
+#include "PieceStructure.hpp"
+
 
 int main(int argc, const char * argv[]) {
     

@@ -9,7 +9,8 @@
 #ifndef BoardStructure_hpp
 #define BoardStructure_hpp
 #include <stdio.h>
-class piece;
+#include "PieceStructure.hpp"
+
 class Board{
     public:
         Board(); //Constructor
@@ -22,10 +23,10 @@ class Board{
         virtual void capturePiece(int x,int y); //Move a piece to the captured zone off of the board
         virtual int score(const Board &scored); //Score a board
     private:
-        piece** mainBoard[8][8]; //Pointer array representing the chess board
+        Piece** mainBoard[8][8]; //Pointer array representing the chess board
         bool turn; //Whose turn it is
-        piece* whiteCaptured[16]; //White's captured zone
-        piece* blackCaptured[16]; //Black's captured zone
+        Piece* whiteCaptured[16]; //White's captured zone
+        Piece* blackCaptured[16]; //Black's captured zone
     
     
     

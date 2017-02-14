@@ -18,7 +18,9 @@ class Piece{
         virtual Piece operator=(const Piece &copy); //Assignment operator
         virtual void move(int x, int y); //Call the board's move function if it is a valid move
         virtual bool checkMove(int x, int y); //Check if a move to x,y is valid
-        virtual bool inline checkIfCaptured();
+        virtual bool inline checkIfCaptured(); //Return the captured
+        virtual void transferPiece(int x, int y); //Moves piece data from to another spot on the board
+        virtual void capturePiece(); //Moves itself to the captured zone
     protected:
         bool captured;
     

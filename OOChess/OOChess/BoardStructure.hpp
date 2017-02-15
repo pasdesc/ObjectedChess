@@ -22,8 +22,12 @@ class Board{
         virtual void inline switchTurn(); //Switch the turn
         virtual void capturePiece(int x,int y); //Move a piece to the captured zone off of the board
         virtual int score(const Board &scored); //Score a board
+        virtual inline bool isGameOver();
+        virtual inline bool gameIsOver();
     private:
         Piece** mainBoard[8][8]; //Pointer array representing the chess board
+        bool gameOver;
+        bool winner;
         bool turn; //Whose turn it is
         Piece* whiteCaptured[16]; //White's captured zone
         Piece* blackCaptured[16]; //Black's captured zone

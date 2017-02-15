@@ -12,6 +12,21 @@
 
 
 int main(int argc, const char * argv[]) {
+    Board* board;
+    board=new Board;
+    while (true){
+        
+        
+        if (board->isGameOver()==true){
+            break;
+        }
+        board->switchTurn();
+    }
+    std::cout<<"You lost, and you won!!"<<std::endl;
+    delete board;
+    board=nullptr;
+    
+    
     
     return 0;
 }

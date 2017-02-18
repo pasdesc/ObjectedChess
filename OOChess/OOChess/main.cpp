@@ -12,17 +12,54 @@
 
 
 int main(int argc, const char * argv[]) {
+    std::string loserColor;
+    std::string winnerColor;
+    enum class winloss{
+        White,
+        Black,
+    } loser,winner;
     Board* board;
     board=new Board;
     while (true){
         
         
         if (board->isGameOver()==true){
+            if(board->getWinner()==true){
+                loser=winloss::Black;
+                winner=winloss::White;
+            }
+            else{
+                loser=winloss::White;
+                winner=winloss::Black;
+                
+            }
             break;
+            
         }
+        
         board->switchTurn();
+        
     }
-    std::cout<<"You lost, and you won!!"<<std::endl;
+    switch (loser) {
+        case winloss::White:
+            loserColor="White";
+            break;
+        case winloss::Black:
+            loserColor="Black";
+        default:
+            break;
+    }
+    switch (winner) {
+        case winloss::White:
+            winnerColor="White";
+            break;
+        case winloss::Black:
+            winnerColor="Black";
+        default:
+            break;
+    }
+    
+    std::cout<<loserColor+" lost, and "+loserColor+"won!!"<<std::endl;
     delete board;
     board=nullptr;
     

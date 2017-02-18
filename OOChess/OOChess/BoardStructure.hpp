@@ -24,7 +24,9 @@ class Board{
         virtual int score(const Board &scored); //Score a board
         virtual inline bool isGameOver();
         virtual inline bool gameIsOver();
-    private:
+        virtual inline bool getWinner();
+    
+    protected:
         Piece** mainBoard[8][8]; //Pointer array representing the chess board
         bool gameOver;
         bool winner;

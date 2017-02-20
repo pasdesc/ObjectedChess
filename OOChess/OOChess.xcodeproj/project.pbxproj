@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		224ED9B41E4B77B500024AB3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224ED9B31E4B77B500024AB3 /* main.cpp */; };
 		224ED9BC1E4B78F900024AB3 /* BoardStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */; };
+		2273B1571E5A0C9D00555432 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2273B1551E5A0C9D00555432 /* input.cpp */; };
 		229054701E4CC9F1009BA8AC /* PieceStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		224ED9B31E4B77B500024AB3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardStructure.cpp; sourceTree = "<group>"; };
 		224ED9BB1E4B78F900024AB3 /* BoardStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BoardStructure.hpp; sourceTree = "<group>"; };
+		2273B1551E5A0C9D00555432 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		2273B1561E5A0C9D00555432 /* input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = input.hpp; sourceTree = "<group>"; };
 		2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PieceStructure.cpp; sourceTree = "<group>"; };
 		2290546F1E4CC9F1009BA8AC /* PieceStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PieceStructure.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				224ED9B31E4B77B500024AB3 /* main.cpp */,
+				2273B1551E5A0C9D00555432 /* input.cpp */,
+				2273B1561E5A0C9D00555432 /* input.hpp */,
 				224ED9BA1E4B78F900024AB3 /* BoardStructure.cpp */,
 				224ED9BB1E4B78F900024AB3 /* BoardStructure.hpp */,
 				2290546E1E4CC9F1009BA8AC /* PieceStructure.cpp */,
@@ -131,6 +136,7 @@
 			files = (
 				224ED9BC1E4B78F900024AB3 /* BoardStructure.cpp in Sources */,
 				229054701E4CC9F1009BA8AC /* PieceStructure.cpp in Sources */,
+				2273B1571E5A0C9D00555432 /* input.cpp in Sources */,
 				224ED9B41E4B77B500024AB3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

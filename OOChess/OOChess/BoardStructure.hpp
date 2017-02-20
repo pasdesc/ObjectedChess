@@ -8,7 +8,7 @@
 
 #ifndef BoardStructure_hpp
 #define BoardStructure_hpp
-#include <stdio.h>
+
 #include "PieceStructure.hpp"
 
 class Board{

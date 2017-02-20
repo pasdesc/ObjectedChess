@@ -32,7 +32,7 @@ int * getMove(bool turn){
     return coorptr;
 };
 void render(){
-    std::string filename = "/Users/pasdesc/Documents/FibonacciSequence.py";
+    std::string filename = "Rendering.py";
     std::string command = "python ";
     command += filename;
     system(command.c_str());

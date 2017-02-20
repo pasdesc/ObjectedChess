@@ -9,7 +9,6 @@
 #ifndef PieceStructure_hpp
 #define PieceStructure_hpp
 class Board;
-#include <stdio.h>
 class Piece{
     public:
         Piece(); //Constructor

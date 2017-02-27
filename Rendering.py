@@ -104,11 +104,11 @@ while True:
         piece=capturedarray[num]
         if piece==0:
             if num<=15:
-                os.chdir("chessPieces")
+     
                 if typearray[num]==0:
                    print(os.getcwd())
                    pieces[num]=pygame.Rect(WINDOW_WIDTH/8*xarray[num],WINDOW_WIDTH/8*(yarray[num])+80,WINDOW_WIDTH/8,WINDOW_WIDTH/8)
-                   temper=pygame.image.load("pawnw.png")
+                   temper=pygame.image.load("chessPieces/pawnw.jpg")
                    piecesimage[num]=pygame.transform.scale(temper,(int(WINDOW_WIDTH/8),int(WINDOW_WIDTH/8)))
                 elif typearray[num]==1:
                    pieces[num]=pygame.Rect(WINDOW_WIDTH/8*xarray[num],WINDOW_WIDTH/8*(yarray[num])+80,WINDOW_WIDTH/8,WINDOW_WIDTH/8)

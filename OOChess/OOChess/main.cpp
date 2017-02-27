@@ -14,10 +14,6 @@
 int main(int argc, const char * argv[]) {
     std::string loserColor;
     std::string winnerColor;
-    enum class winloss{
-        White,
-        Black,
-    } loser,winner;
     Board* board;
     board=new Board;
     while (true){
@@ -29,16 +25,14 @@ int main(int argc, const char * argv[]) {
         int y2=(*(move_ptr+3)); //Defines y2 as the y-coordinate to move to
         
         
-        
-        
-        if (board->isGameOver()==true){
+        if (board->isGameOver()==true){  //Handles win-loss conditions.
             if(board->getWinner()==true){
-                loser=winloss::Black;
-                winner=winloss::White;
+                loserColor="Black";
+                winnerColor="White";
             }
             else{
-                loser=winloss::White;
-                winner=winloss::Black;
+                loserColor="Black";
+                winnerColor="White";
                 
             }
             break;
@@ -48,30 +42,8 @@ int main(int argc, const char * argv[]) {
         board->switchTurn();
         
     }
-    switch (loser) {
-        case winloss::White:
-            loserColor="White";
-            break;
-        case winloss::Black:
-            loserColor="Black";
-        default:
-            break;
-    }
-    switch (winner) {
-        case winloss::White:
-            winnerColor="White";
-            break;
-        case winloss::Black:
-            winnerColor="Black";
-        default:
-            break;
-    }
-    
     std::cout<<loserColor+" lost, and "+winnerColor+" won!!"<<std::endl;
     delete board;
     board=nullptr;
-    
-    
-    
     return 0;
 }

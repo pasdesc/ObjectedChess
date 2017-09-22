@@ -24,10 +24,11 @@ class Board{
         Board(const Board &&copy);
         virtual const Board& operator=(const Board &&copy);
         virtual bool getTurn(); //Check whose turn it is
-        virtual void movePiece(short int x1, short int y1, short int x2, short int y2); //Move a piece from (x1,y1) to (x2,y2)
+        virtual void movePiece(short int movecoords []); //Move a piece from (x1,y1) to (x2,y2)
+        virtual bool checkMove(short int movecoords []); //Check whether move is legal
         virtual void switchTurn(); //Switch the turn
         virtual void capturePiece(int x,int y); //Move a piece to the captured zone off of the board
-        virtual int score(const Board &scored); //Score a board
+        virtual int score(); //Score a board
         virtual bool isGameOver();
         virtual void gameIsOver();
         virtual bool getWinner();

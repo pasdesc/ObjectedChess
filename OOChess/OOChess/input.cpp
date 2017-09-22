@@ -8,9 +8,9 @@
 
 #include "input.hpp"
 
-int * getMove(bool turn){
-    static int coordinates[2][2];
-    int * coorptr=&coordinates[0][0];
+short int * getMove(bool turn){
+    static short int coordinates[2][2];
+    short int * coorptr=&coordinates[0][0];
     std::string turnColor="";
     if(turn) {
         turnColor="White";

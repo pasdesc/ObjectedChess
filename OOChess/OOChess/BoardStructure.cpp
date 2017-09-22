@@ -36,8 +36,11 @@ Board::Board(const Board &&copy){
 bool Board::getTurn(){
     return this->turn;
 }
-void Board::movePiece(short int x1, short int y1, short int x2, short int y2){
+void Board::movePiece(short int movecoords[]){
   
+}
+bool Board::checkMove(short int movecoords[]){
+    return true;
 }
 void Board::switchTurn(){
     this->turn=!this->turn;
@@ -45,7 +48,7 @@ void Board::switchTurn(){
 void Board::capturePiece(int x,int y){
     
 }
-int Board::score(const Board &scored){
+int Board::score(){
     return 0;
 }
 void Board::gameIsOver(){

@@ -10,7 +10,7 @@
 #define input_hpp
 #include <stdio.h>
 #include <iostream>
-int* getMove(bool turn);
+short int * getMove(bool turn);
 void render();
 
 
